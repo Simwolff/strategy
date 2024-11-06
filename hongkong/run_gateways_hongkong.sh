@@ -39,9 +39,9 @@ nohup roq-udp-subscriber \
 # Run roq-udp-publisher in the background with logging
 nohup roq-udp-publisher \
   --name=udp-publisher \
-  --udp_snapshot_address=10.8.21.187 \
+  --udp_snapshot_address=10.8.33.223 \
   --udp_snapshot_port=1504 \
-  --udp_incremental_address=10.8.21.187 \
+  --udp_incremental_address=10.8.33.223 \
   --udp_incremental_port=1505 \
   --config_file=config.toml \
   --auth_keys_file ~/keys.json \
