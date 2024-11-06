@@ -8,7 +8,6 @@ nohup roq-deribit \
   --auth_keys_file ~/keys.json \
   --loop_sleep=0ns \
   --loop_timer_freq=250ns \
-  --event_log_dir event_logs \
   --loop_cpu_affinity=0 \
   --client_listen_address ~/sockets/deribit.sock \
   > gateway_logs/deribit.log 2>&1 &
