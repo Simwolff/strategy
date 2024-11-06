@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ROQ_v=0 roq-udp-simple \
     --name RAY \
-    --maker=false \
+    --maker=true \
     --symbol_maker="RAY_USDT" \
     --symbol_taker="RAY-USDT-SWAP" \
     --exchange_maker="gate-futures" \
@@ -17,6 +17,6 @@ ROQ_v=0 roq-udp-simple \
     --taker_multiplier=1 \
     --close_positions=false \
     --taker_min_order_size=1 \
-    ~/okx.sock \
-    ~/udp_pub_tokyo.sock \
-    ~/udp_sub_tokyo.sock \
+    ~/gateio.sock \
+    ~/udp_pub_hongkong.sock \
+    ~/udp_sub_hongkong.sock \
