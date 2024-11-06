@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+roq-udp-fundingrate \
+    --name LTC_FR \
+    --maker=false \
+    --enable_trading=true \
+    --symbol_taker="LTC_USDC-PERPETUAL" \
+    --symbol_maker="LTC-USDT-SWAP" \
+    --exchange_maker="okx" \
+    --exchange_taker="deribit" \
+    --maker_side="SELL" \
+    --taker_side="BUY" \
+    --maker_quantity=10 \
+    --maker_multiplier=1 \
+    --taker_multiplier=0.1 \
+    --max_position_maker=325 \
+    --max_position_taker=3250 \
+    --taker_min_order_size=1 \
+    --open_positions=false \
+    --price_check=true \
+    --tick_spread=0.0001 \
+    ~/deribit.sock \
+    ~/udp_pub_london.sock \
+    ~/udp_sub_london.sock \
