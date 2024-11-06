@@ -31,7 +31,10 @@ symbols = [
    "KSM-USDT-SWAP",
    "ID-USDT-SWAP",
    "CVC-USDT-SWAP",
-   "XRP-USDT-SWAP"
+   "XRP-USDT-SWAP",
+   "SWEAT-USDT-SWAP",
+   "RAY-USDT-SWAP",
+   "ENS-USDT-SWAP"
 #  "^BTC(_USD[A-Z]?)?-PERPETUAL$", # swaps
 #  "^SOL(_USD[A-Z]?)?-PERPETUAL$",      # swaps
 
@@ -191,6 +194,21 @@ symbols = [
   password = "secret"
   accounts = [ "A1" ]
   symbols = ["CVC-USDT-SWAP"]
+
+  [users.SWEAT]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["SWEAT-USDT-SWAP"]
+
+  [users.ENS]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["ENS-USDT-SWAP"]
+
+  [users.RAY]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["RAY-USDT-SWAP"]
 
 [rate_limits]
 

@@ -20,6 +20,9 @@ symbols = [
   "ID_USDT",
   "CVC_USDT",
   "XRP_USDT"
+  "SWEAT_USDT",
+  "RAY_USDT",
+  "ENS_USDT"
 ]
 
 [accounts]
@@ -125,6 +128,21 @@ symbols = [
   password = "secret"
   accounts = [ "A1" ]
   symbols = ["CVC_USDT"]
+
+  [users.SWEAT]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["SWEAT_USDT"]
+
+  [users.ENS]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["ENS_USDT"]
+
+  [users.RAY]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["RAY_USDT"]
 
 [rate_limits]
 

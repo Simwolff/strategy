@@ -12,4 +12,13 @@ symbols = ".*"
   password = "secret"
 
   [users.LTC_FR]
+  password = "secret"
+
+  [users.SWEAT]
+  password = "secret"
+
+  [users.ENS]
+  password = "secret"
+
+  [users.RAY]
   password = "secret" 
