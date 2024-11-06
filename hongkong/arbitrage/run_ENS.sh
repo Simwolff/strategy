@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 ROQ_v=0 roq-udp-simple \
-    --name RAY \
+    --name ENS \
     --maker=false \
-    --symbol_maker="RAY_USDT" \
-    --symbol_taker="RAY-USDT-SWAP" \
+    --symbol_maker="ENS_USDT" \
+    --symbol_taker="ENS-USDT-SWAP" \
     --exchange_maker="gate-futures" \
     --exchange_taker="okx" \
     --enable_trading=true \
-    --spread_high=1.001766 \
-    --spread_low=0.9994 \
+    --spread_high=1.0002 \
+    --spread_low=0.998947 \
     --trigger_spread_margin=0.00005 \
-    --max_position_taker=1000 \
-    --max_position_maker=10000 \
-    --maker_quantity=500 \
+    --max_position_taker=5000 \
+    --max_position_maker=5000 \
+    --maker_quantity=100 \
     --maker_multiplier=0.1 \
-    --taker_multiplier=1 \
+    --taker_multiplier=0.1 \
     --close_positions=false \
     --taker_min_order_size=1 \
     ~/okx.sock \
