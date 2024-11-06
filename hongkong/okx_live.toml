@@ -1,0 +1,210 @@
+symbols = [ 
+   "^BTC-USD[A-Z]?-[0-9]{6}$",  # futures
+#  "^ETH-[0-9]{1,2}[A-Z]{3}[0-9]{2}$",  # futures
+#  "^SOL-[0-9]{1,2}[A-Z]{3}[0-9]{2}$",  # futures
+#  "^XRP-[0-9]{1,2}[A-Z]{3}[0-9]{2}$",  # futures
+#  "^BCH-[0-9]{1,2}[A-Z]{3}[0-9]{2}$",  # futures
+   "^BTC-USD[A-Z]?(-SWAP)?$", # swaps
+#  "^ETH-USD[A-Z]?(-SWAP)?$", # swaps
+   "^SOL-USD[A-Z]?(-SWAP)?$", # swaps
+#  "^XRP-USD[A-Z]?(-SWAP)?$", # swaps
+#  "^BCH-USD[A-Z]?(-SWAP)?$", # swaps
+   "^TRX-USD[A-Z]?(-SWAP)?$", # swaps
+   "^ADA-USD[A-Z]?(-SWAP)?$", # swaps
+   "^LINK-USD[A-Z]?(-SWAP)?$", # swaps
+   "^LTC-USD[A-Z]?(-SWAP)?$", # swaps
+   "^ALGO-USD[A-Z]?(-SWAP)?$", # swaps
+   "^NEAR-USD[A-Z]?(-SWAP)?$", # swaps
+   "^DOT-USD[A-Z]?(-SWAP)?$", # swaps
+   "^CRO-USD[A-Z]?(-SWAP)?$", # swaps
+   "^AGLD-USD[A-Z]?(-SWAP)?$", # swaps
+   "^ATH-USD[A-Z]?(-SWAP)?$", # swap
+   "^WOO-USD[A-Z]?(-SWAP)?$", # swaps
+   "CVX-USDT-SWAP",
+   "GLM-USDT-SWAP",
+   "ZRX-USDT-SWAP",
+   "XTZ-USDT-SWAP",
+   "SNX-USDT-SWAP",
+   "SLP-USDT-SWAP",
+   "RSR-USDT-SWAP",
+   "RON-USDT-SWAP",
+   "KSM-USDT-SWAP",
+   "ID-USDT-SWAP",
+   "CVC-USDT-SWAP",
+   "XRP-USDT-SWAP"
+#  "^BTC(_USD[A-Z]?)?-PERPETUAL$", # swaps
+#  "^SOL(_USD[A-Z]?)?-PERPETUAL$",      # swaps
+
+]
+
+[accounts]
+
+  [accounts.A1]
+  master = true
+  login = "a2779df4-e19c-47d1-a44a-25c022996247"
+  password = "XNAR9FKdP-dPUtWqyco4"
+  secret = "1379A25F6BC3EA4E599428FFEE3FD44E"
+  symbols = [ ".*" ]
+
+[users]
+
+  [users.test]
+  password = "1234"
+  symbols = ".*"
+
+  [users.trader]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [".*XRP.*", ".*TRX.*", ".*ADA.*", ".*LINK.*",  ".*LTC.*", ".*ALGO.*",  ".*NEAR.*" ]
+  
+  [users.simon]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*DOT.*",".*ADA.*", ".*LINK.*", ".*TRX.*",  ".*LTC.*", ".*ALGO.*",  ".*NEAR.*" ]
+ 
+  [users.BCH]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*BCH.*", ".*ETH.*", ".*SOL.*",".*XRP.*",  ".*NEAR.*"  ]
+
+  [users.trader2]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*ADA.*", ".*LINK.*", ".*TRX.*", ".*LTC.*", ".*ALGO.*",   ".*NEAR.*" ]
+
+  [users.linus]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*BTC.*", ".*ETH.*", ".*SOL.*"]
+
+  [users.BTC-ETH_d-o]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*BTC.*", ".*ETH.*"]
+
+  [users.BTC-SOL_d-o]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*BTC.*", ".*SOL.*"]
+
+  [users.gateio-test]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*BTC.*", ".*SOL.*"]
+
+  [users.LTC_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*LTC.*"]
+
+  [users.DOT_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*DOT.*"]
+
+  [users.LINK_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*LINK.*"]
+
+  [users.BTC_term_front]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*BTC.*"]
+ 
+  [users.CRO_FR]
+  password = "secret"
+  accounts = ["A1"]
+  symbols = [".*CRO.*"]
+
+  [users.ATH_FR1]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [".*ATH.*"]
+
+  [users.AGLD_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [".*AGLD.*"]
+
+  [users.ALGO_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [".*ALGO.*"]
+
+  [users.WOO_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [".*WOO.*"]
+
+  [users.CVX_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [".*CVX.*"]
+
+  [users.GLM_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [".*GLM.*"]
+
+  [users.ZRX_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["ZRX-USDT-SWAP"]
+
+  [users.XTZ_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["XTZ-USDT-SWAP"]
+
+  [users.SNX_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["SNX-USDT-SWAP"]
+  
+  [users.SLP_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["SLP-USDT-SWAP"]
+
+  [users.RSR_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["RSR-USDT-SWAP"]
+
+  [users.RON_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["RON-USDT-SWAP"]
+
+  [users.KSM_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["KSM-USDT-SWAP"]
+
+  [users.ID_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["ID-USDT-SWAP"]
+
+  [users.CVC_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["CVC-USDT-SWAP"]
+
+[rate_limits]
+
+  [rate_limits.global]
+    type = "ORDER_ACTION"
+    aggregate = true
+    request_limit = 200
+    monitor_period = "2s"
+    ban_period = "5m"
+
+[rate_limits.maker_taker]
+  type = "ORDER_ACTION"
+  users = [ "BTC-ETH_d-o" ]
+  request_limit = 60
+  monitor_period = "2s"
+  ban_period = "5m"
+

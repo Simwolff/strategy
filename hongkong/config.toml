@@ -1,0 +1,12 @@
+symbols = ".*"
+
+[users]
+
+  [users.trader]
+  password = "secret"
+
+  [users.simon]
+  password = "secret"
+
+ [users.LTC_FR]
+ password = "secret"
