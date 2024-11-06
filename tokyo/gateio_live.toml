@@ -1,0 +1,136 @@
+symbols = [
+ # "^BTC_USD[A-Z]?$",
+ # "^ETH_USD[A-Z]?$",
+ # "^SOL_USD[A-Z]?$",
+  "BTC_USDT",
+  "ALGO_USDT",
+  "AGLD_USDT",
+  "ATH_USDT",
+  "CRO_USDT",
+  "WOO_USDT",
+  "CVX_USDT",
+  "GLM_USDT",
+  "ZRX_USDT",
+  "XTZ_USDT",
+  "SNX_USDT",
+  "SLP_USDT",
+  "RSR_USDT",
+  "RON_USDT",
+  "KSM_USDT",
+  "ID_USDT",
+  "CVC_USDT",
+  "XRP_USDT"
+]
+
+[accounts]
+
+  [accounts.A1]
+  master = true
+  login = "98251e573f850df7d52e022c85cd2570"
+  secret = "9f8b35f3bcdb0173326b33be5448504dbfe541118cbf91be5c73cac075da82ed"
+  symbols = [ ".*" ]
+
+[users]
+
+  [users.test]
+  password = "1234"
+  symbols = ".*"
+
+  [users.trader]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*BTC.*", ".*ETH.*", ".*SOL.*", ".*XRP.*" ]
+
+  [users.gateio-test]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = [ ".*SOL.*" ]
+
+  [users.AGLD_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["AGLD_USDT"]
+
+  [users.ALGO_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["ALGO_USDT"]
+
+  [users.ATH_FR1]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["ATH_USDT"]
+
+  [users.CRO_FR]
+  password = "secret"
+  accounts = ["A1"]
+  symbols = ["CRO_USDT"]
+
+  [users.WOO_FR]
+  password = "secret"
+  accounts = ["A1"]
+  symbols = ["WOO_USDT"]
+
+  [users.GLM_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["GLM_USDT"]
+
+  [users.CVX_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["CVX_USDT"]
+
+  [users.ZRX_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["ZRX_USDT"]
+
+  [users.XTZ_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["XTZ_USDT"]
+
+  [users.SNX_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["SNX_USDT"]
+  
+  [users.SLP_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["SLP_USDT"]
+
+  [users.RSR_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["RSR_USDT"]
+
+  [users.RON_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["RON_USDT"]
+
+  [users.KSM_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["KSM_USDT"]
+
+  [users.ID_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["ID_USDT"]
+
+  [users.CVC_FR]
+  password = "secret"
+  accounts = [ "A1" ]
+  symbols = ["CVC_USDT"]
+
+[rate_limits]
+
+  [rate_limits.global]
+    type = "ORDER_ACTION"
+    aggregate = true
+    request_limit = 100
+    monitor_period = "1s"
+    ban_period = "5m"
