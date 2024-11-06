@@ -46,7 +46,7 @@ nohup roq-udp-publisher \
   --config_file=config.toml \
   --auth_keys_file ~/keys.json \
   --client_listen_address ~/sockets/udp_pub_tokyo.sock \
-  > gateways_logs/publisher_tokyo.log 2>&1 &
+  > gateway_logs/publisher_tokyo.log 2>&1 &
 
 # Run roq-udp-subscriber in the background with logging
 nohup roq-udp-subscriber \
