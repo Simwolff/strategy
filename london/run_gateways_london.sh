@@ -4,14 +4,14 @@
 nohup roq-deribit \
   --name "deribit" \
   --flagfile ~/opt/conda/envs/deploy/share/roq-deribit/flags/prod/flags.cfg \
-  --config_file ~/deribit_live.toml \
+  --config_file ~/strategy/london/deribit_live.toml \
   --auth_keys_file=keys.json \
   --loop_sleep=0ns \
   --loop_timer_freq=250ns \
   --event_log_dir event_logs \
   --loop_cpu_affinity=0 \
-  --client_listen_address ~/deribit.sock \
-  > deribit.log 2>&1 &
+  --client_listen_address ~/sockets/deribit.sock \
+  > gateway_logs/deribit.log 2>&1 &
 
 # Run roq-udp-publisher in the background with logging
 nohup roq-udp-publisher \
@@ -22,8 +22,8 @@ nohup roq-udp-publisher \
   --udp_incremental_port=1501 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_pub_tokyo.sock \
-  > publisher_tokyo.log 2>&1 &
+  --client_listen_address ~/sockets/udp_pub_tokyo.sock \
+  > gateway_logs/publisher_tokyo.log 2>&1 &
 
 # Run roq-udp-subscriber in the background with logging
 nohup roq-udp-subscriber \
@@ -34,8 +34,8 @@ nohup roq-udp-subscriber \
   --udp_incremental_port=1501 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_sub_tokyo.sock \
-  > subscriber_tokyo.log 2>&1 &
+  --client_listen_address ~/sockets/udp_sub_tokyo.sock \
+  > gateway_logs/subscriber_tokyo.log 2>&1 &
 
   # Run roq-udp-publisher in the background with logging
 nohup roq-udp-publisher \
@@ -46,8 +46,8 @@ nohup roq-udp-publisher \
   --udp_incremental_port=1503 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_pub_hongkong.sock \
-  > publisher_hongkong.log 2>&1 &
+  --client_listen_address ~/sockets/udp_pub_hongkong.sock \
+  > gateway_logs/publisher_hongkong.log 2>&1 &
 
 # Run roq-udp-subscriber in the background with logging
 nohup roq-udp-subscriber \
@@ -58,6 +58,6 @@ nohup roq-udp-subscriber \
   --udp_incremental_port=1503 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_sub_hongkong.sock \
-  > subscriber_hongkong.log 2>&1 &
+  --client_listen_address ~/sockets/udp_sub_hongkong.sock \
+  > gateway_logs/subscriber_hongkong.log 2>&1 &
 

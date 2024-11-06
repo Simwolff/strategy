@@ -4,12 +4,12 @@
 nohup roq-gate-futures \
   --name "gate-futures" \
   --config_file gateio_live.toml \
-  --client_listen_address ~/gateio.sock \
+  --client_listen_address ~/sockets/gateio.sock \
   --auth_keys_file=keys.json \
   --loop_sleep=0ns \
   --loop_timer_freq=250ns \
   --flagfile ~/opt/conda/envs/deploy/share/roq-gate-futures/flags/prod/flags-usdt.cfg \
-  > gateio.log 2>&1 &
+  > gateway_logs/gateio.log 2>&1 &
 
 # Run roq-udp-publisher in the background with logging
 nohup roq-udp-publisher \
@@ -20,8 +20,8 @@ nohup roq-udp-publisher \
   --udp_incremental_port=1501 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_pub_london.sock \
-  > publisher_london.log 2>&1 &
+  --client_listen_address ~/sockets/udp_pub_london.sock \
+  > gateway_logs/publisher_london.log 2>&1 &
 
 # Run roq-udp-subscriber in the background with logging
 nohup roq-udp-subscriber \
@@ -32,8 +32,8 @@ nohup roq-udp-subscriber \
   --udp_incremental_port=1501 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_sub_london.sock \
-  > subscriber_london.log 2>&1 &
+  --client_listen_address ~/sockets/udp_sub_london.sock \
+  > gateway_logs/subscriber_london.log 2>&1 &
 
 nohup roq-udp-publisher \
   --name=udp-publisher \
@@ -43,8 +43,8 @@ nohup roq-udp-publisher \
   --udp_incremental_port=1505 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_pub_hongkong.sock \
-  > publisher_hongkong.log 2>&1 &
+  --client_listen_address ~/sockets/udp_pub_hongkong.sock \
+  > gateway_logs/publisher_hongkong.log 2>&1 &
 
 # Run roq-udp-subscriber in the background with logging
 nohup roq-udp-subscriber \
@@ -55,6 +55,6 @@ nohup roq-udp-subscriber \
   --udp_incremental_port=1505 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_sub_hongkong.sock \
-  > subscriber_hongkong.log 2>&1 &
+  --client_listen_address ~/sockets/udp_sub_hongkong.sock \
+  > gateway_logs/subscriber_hongkong.log 2>&1 &
 

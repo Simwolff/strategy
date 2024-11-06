@@ -4,11 +4,11 @@
 nohup roq-okx \
   --name "okx" \
   --flagfile ~/opt/conda/envs/deploy/share/roq-okx/flags/prod/flags.cfg \
-  --config_file ~/okx_live.toml \
+  --config_file ~/strategy/hongkong/okx_live.toml \
   --loop_sleep=0ns \
   --loop_timer_freq=250ns \
   --ws_books_depth=50 \
-  --client_listen_address ~/okx.sock \
+  --client_listen_address ~/sockets/okx.sock \
   --auth_keys_file=keys.json \
   > okx.log 2>&1 &
 
@@ -21,8 +21,8 @@ nohup roq-udp-publisher \
   --udp_incremental_port=1503 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_pub_london.sock \
-  > publisher_london.log 2>&1 &
+  --client_listen_address ~/sockets/udp_pub_london.sock \
+  > gateway_logs/publisher_london.log 2>&1 &
 
 # Run roq-udp-subscriber in the background with logging
 nohup roq-udp-subscriber \
@@ -33,8 +33,8 @@ nohup roq-udp-subscriber \
   --udp_incremental_port=1503 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_sub_london.sock \
-  > subscriber_london.log 2>&1 &
+  --client_listen_address ~/sockets/udp_sub_london.sock \
+  > gateway_logs/subscriber_london.log 2>&1 &
 
 # Run roq-udp-publisher in the background with logging
 nohup roq-udp-publisher \
@@ -45,8 +45,8 @@ nohup roq-udp-publisher \
   --udp_incremental_port=1505 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_pub_tokyo.sock \
-  > publisher_tokyo.log 2>&1 &
+  --client_listen_address ~/sockets/udp_pub_tokyo.sock \
+  > gateways_logs/publisher_tokyo.log 2>&1 &
 
 # Run roq-udp-subscriber in the background with logging
 nohup roq-udp-subscriber \
@@ -57,5 +57,5 @@ nohup roq-udp-subscriber \
   --udp_incremental_port=1505 \
   --config_file=config.toml \
   --auth_keys_file=keys.json \
-  --client_listen_address ~/udp_sub_tokyo.sock \
-  > subscriber_tokyo.log 2>&1 &
+  --client_listen_address ~/sockets/udp_sub_tokyo.sock \
+  > gateway_logs/subscriber_tokyo.log 2>&1 &
