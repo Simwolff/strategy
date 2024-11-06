@@ -5,7 +5,7 @@ nohup roq-deribit \
   --name "deribit" \
   --flagfile ~/opt/conda/envs/deploy/share/roq-deribit/flags/prod/flags.cfg \
   --config_file ~/strategy/london/deribit_live.toml \
-  --auth_keys_file=keys.json \
+  --auth_keys_file ~/keys.json \
   --loop_sleep=0ns \
   --loop_timer_freq=250ns \
   --event_log_dir event_logs \
@@ -21,7 +21,7 @@ nohup roq-udp-publisher \
   --udp_incremental_address=10.8.33.223 \
   --udp_incremental_port=1501 \
   --config_file=config.toml \
-  --auth_keys_file=keys.json \
+  --auth_keys_file ~/keys.json \
   --client_listen_address ~/sockets/udp_pub_tokyo.sock \
   > gateway_logs/publisher_tokyo.log 2>&1 &
 
@@ -33,7 +33,7 @@ nohup roq-udp-subscriber \
   --udp_incremental_address=0.0.0.0 \
   --udp_incremental_port=1501 \
   --config_file=config.toml \
-  --auth_keys_file=keys.json \
+  --auth_keys_file ~/keys.json \
   --client_listen_address ~/sockets/udp_sub_tokyo.sock \
   > gateway_logs/subscriber_tokyo.log 2>&1 &
 
@@ -45,7 +45,7 @@ nohup roq-udp-publisher \
   --udp_incremental_address=10.7.94.174 \
   --udp_incremental_port=1503 \
   --config_file=config.toml \
-  --auth_keys_file=keys.json \
+  --auth_keys_file ~/keys.json \
   --client_listen_address ~/sockets/udp_pub_hongkong.sock \
   > gateway_logs/publisher_hongkong.log 2>&1 &
 
@@ -57,7 +57,7 @@ nohup roq-udp-subscriber \
   --udp_incremental_address=0.0.0.0 \
   --udp_incremental_port=1503 \
   --config_file=config.toml \
-  --auth_keys_file=keys.json \
+  --auth_keys_file ~/keys.json \
   --client_listen_address ~/sockets/udp_sub_hongkong.sock \
   > gateway_logs/subscriber_hongkong.log 2>&1 &
 
