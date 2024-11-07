@@ -1,0 +1,220 @@
+I1106 15:57:31.165484 9727 logging: async
+I1106 15:57:31.165511 9727 L0 service.cpp:67] ===== START =====
+I1106 15:57:31.165512 9727 L0 service.cpp:68] package name  : roq-okx
+I1106 15:57:31.165513 9727 L0 service.cpp:69] build version : 1.0.2
+I1106 15:57:31.165514 9727 L0 service.cpp:70] build number  : 20241106
+I1106 15:57:31.165515 9727 L0 service.cpp:71] build type    : Release
+I1106 15:57:31.165515 9727 L0 service.cpp:72] git hash      : g4143bcd
+I1106 15:57:31.165516 9727 L0 service.cpp:73] compile time  : Nov  6 2024 06:39:58
+I1106 15:57:31.165516 9727 L0 service.cpp:74] host          : x86_64-conda-linux-gnu
+I1106 15:57:31.165518 9727 L0 service.cpp:75] uname -v      : #18~22.04.1-Ubuntu SMP Thu Oct  3 19:57:42 UTC 2024
+I1106 15:57:31.165520 9727 L0 service.cpp:76] uname -s      : Linux
+I1106 15:57:31.165521 9727 L0 service.cpp:77] uname -r      : 6.8.0-1017-aws
+I1106 15:57:31.165524 9727 L0 service.cpp:78] cwd           : /home/ubuntu/strategy/hongkong
+I1106 15:57:31.165525 9727 L0 service.cpp:79] pid           : 9727
+I1106 15:57:31.165622 9727 L0 settings.cpp:15] settings={misc={encode_buffer_size=1048576, decode_buffer_size=10485760, include_bad_subscriptions=false, test_local_interface=""}, rest={uri={scheme="https", userinfo="", host="www.okx.com", port=0, path="", query="", fragment=""}, host="", proxy={scheme="", userinfo="", host="", port=0, path="", query="", fragment=""}, ping_freq=10000000000ns, ping_path="/api/v5/public/time", request_timeout=30000000000ns}, ws={public_uri={scheme="wss", userinfo="", host="ws.okx.com", port=8443, path="/ws/v5/public", query="", fragment=""}, public_host="", private_uri={scheme="wss", userinfo="", host="ws.okx.com", port=8443, path="/ws/v5/private", query="", fragment=""}, private_host="", ping_freq=5000000000ns, max_subscriptions_per_stream=32, books_depth=50, books_use_public=false, disconnect_timeout=10000000000ns}, download={trades_lookback=300000000000ns, trades_lookback_on_restart=0ns, trades_limit=100}, mbp={allow_price_inversion=false}, request={limit=80, limit_interval=10000000000ns}, server={package={name="roq-okx", build_number="20241106"}, app={name="okx", api=""}, config={file="/home/ubuntu/strategy/hongkong/okx_live.toml", secrets_file=""}, database={uri="", username="", password=***, name="roq_cache", retain_stale_orders_for=604800000000000ns}, io={backend="libevent", recv_buffer_size=0, recv_buffer_count=0, send_buffer_size=0, send_buffer_count=0}, net={connection_timeout=5000000000ns, disconnect_on_idle_timeout=30000000000ns, tls_validate_certificate=false}, loop={cpu_affinity=-1, sleep=0ns, timer_freq=250ns, scheduling_policy="", scheduling_priority=-1}, cache={dir="roq-cache", retain_config_users_for=604800000000000ns}, udp={snapshot_address=, snapshot_port=, incremental_address=, incremental_port=, snapshot_delay_freq=10000000ns, snapshot_repeat_freq=60000000000ns, incremental_heartbeat_freq=3000000000ns, encoding="flatbuffers", enable_mbp=false}, event_log={input_buffer_size=16777216, output_buffer_size=16777216, compression_level=4, dir="", iso_week=true, sync_freq=300000000000ns, utimes_on_sync=false, encoding="flatbuffers", symlink=true}, client={listen_address="/home/ubuntu/sockets/okx.sock"}, ipc={copy_out_buffer_size=8388608, spmc_queue_size=134217728, spsc_queue_size=1048576}, service={listen_address="", url_prefix="", web_dir=""}, auth={keys_file="/home/ubuntu/keys.json", license_manager_uri=[https://auth-1.roq-trading.com/, https://auth-2.roq-trading.com/], proxy={scheme="", userinfo="", host="", port=0, path="", query="", fragment=""}, is_uat=false, hide_name=false, refresh_freq=1800000000000ns, retry_freq=60000000000ns, lock_period=7200000000000ns}, journal={cache=false, multicast_port=0, multicast_address="", local_interface="", multicast_ttl=4, multicast_loop=false, listen_port=0, test_disable_local_cache=false}, experimental={mbp_checksum=false, enable_risk=false,enable_portfolio=false,enable_reduce_only=falseenable_rest_cache=false, enable_time_series=false}}}
+I1106 15:57:31.165640 9727 L0 reader.cpp:624] Parse config_file="/home/ubuntu/strategy/hongkong/okx_live.toml", cache_dir="roq-cache"
+I1106 15:57:31.165672 9727 L0 directory.cpp:80] Ensure directory path="roq-cache/okx/config" exists
+I1106 15:57:31.167679 9727 L0 context_factory.cpp:19] Create libevent context (config={recv={buffer_size=4096, buffer_count=32}, send={buffer_size=1048576, buffer_count=32}})
+I1106 15:57:31.167803 9727 L0 base.cpp:29] Initializing openssl...
+I1106 15:57:31.170134 9727 L0 dispatcher.cpp:295] Creating event-log...
+I1106 15:57:31.170169 9727 L0 dispatcher.cpp:302] Creating internal queue...
+I1106 15:57:31.170822 9727 L0 dispatcher.cpp:307] Creating broadcast queue...
+I1106 15:57:31.171825 9727 L0 cache.cpp:39] order_id seed 2684145117182
+I1106 15:57:31.181931 9727 L0 directory.cpp:80] Ensure directory path="roq-cache/okx/oms" exists
+I1106 15:57:31.181957 9727 L0 directory.cpp:80] Ensure directory path="roq-cache/okx/order" exists
+I1106 15:57:31.184182 9727 L0 dispatcher.cpp:404] Config hash="UEB6FBS6oST6znbDnu9XQWOljzU94La4eICRriWv3O4="
+I1106 15:57:31.224980 9727 L0 gateway.cpp:83] Create MarketData (stream_id=5, index=0)
+I1106 15:57:31.238571 9727 L0 context_factory.cpp:19] Create libevent context (config={recv={buffer_size=4096, buffer_count=32}, send={buffer_size=1048576, buffer_count=32}})
+I1106 15:57:31.239613 9727 L0 factory.cpp:33] The HTTP service will *not* be started
+I1106 15:57:31.239729 9727 L0 socket.cpp:277] Removing existing path="/home/ubuntu/sockets/okx.sock"...
+I1106 15:57:31.239766 9727 L0 socket.cpp:279] Successfully removed path="/home/ubuntu/sockets/okx.sock"
+I1106 15:57:31.244957 9727 L0 client.cpp:58] Reading keys from path="/home/ubuntu/keys.json"
+I1106 15:57:31.244999 9727 L0 client.cpp:194] Using license manager
+I1106 15:57:31.245013 9727 L0 directory.cpp:80] Ensure directory path="roq-cache/okx/auth" exists
+I1106 15:57:31.246384 9727 L0 client.cpp:548] Reading access token from "roq-cache/okx/auth/1730908377201"...
+I1106 15:57:31.246538 9727 L0 controller.cpp:527] +++ ACCESS TOKEN EXPIRES 1730915577s (IN 115 MINUTE(S)) +++
+I1106 15:57:31.246629 9727 L0 controller.cpp:121] Dispatching...
+W1106 15:57:31.246686 9727 L0 controller.cpp:126] *** REDUCED LOGGING ***
+I1106 15:57:31.246691 9727 L0 client.cpp:254] Starting the authenticator
+I1106 15:57:31.246737 9746 L0 pollster.cpp:87] Dispatcher thread is running
+I1106 15:57:31.246744 9746 L0 gateway.cpp:101] Starting...
+I1106 15:57:31.253910 9746 L0 retry_connection_manager.cpp:193] Connected (host="www.okx.com", port=443)
+I1106 15:57:31.253922 9746 L0 order_entry.cpp:177] stream_status={stream_id=3, account="", supports=, transport=TCP, protocol=HTTP, encoding=JSON, priority=PRIMARY, connection_status=READY, interface="", authority="www.okx.com", path="", proxy=""}
+I1106 15:57:31.254605 9746 L0 retry_connection_manager.cpp:193] Connected (host="ws.okx.com", port=8443)
+I1106 15:57:31.254611 9746 L0 client.cpp:156] Upgrading (host="ws.okx.com", port=8443, path="/ws/v5/private")...
+I1106 15:57:31.255241 9746 L0 retry_connection_manager.cpp:193] Connected (host="www.okx.com", port=443)
+I1106 15:57:31.255249 9746 L0 rest.cpp:138] stream_status={stream_id=1, account="", supports=, transport=TCP, protocol=HTTP, encoding=JSON, priority=PRIMARY, connection_status=READY, interface="", authority="www.okx.com", path="", proxy=""}
+I1106 15:57:31.255888 9746 L0 retry_connection_manager.cpp:193] Connected (host="ws.okx.com", port=8443)
+I1106 15:57:31.255895 9746 L0 client.cpp:156] Upgrading (host="ws.okx.com", port=8443, path="/ws/v5/public")...
+I1106 15:57:31.290901 9746 L0 drop_copy.cpp:461] stream_status={stream_id=4, account="A1", supports=CREATE_ORDER|MODIFY_ORDER|CANCEL_ORDER|ORDER_ACK|ORDER|TRADE|FUNDS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=DOWNLOADING, interface="", authority="ws.okx.com:8443", path="/ws/v5/private", proxy=""}
+I1106 15:57:31.290911 9746 L0 download.hpp:67] Begin
+I1106 15:57:31.290912 9746 L0 download.hpp:172] Request LOGIN...
+I1106 15:57:31.290923 9746 L0 drop_copy.cpp:461] stream_status={stream_id=4, account="A1", supports=CREATE_ORDER|MODIFY_ORDER|CANCEL_ORDER|ORDER_ACK|ORDER|TRADE|FUNDS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=LOGIN_SENT, interface="", authority="ws.okx.com:8443", path="/ws/v5/private", proxy=""}
+I1106 15:57:31.296495 9746 L0 market_data.cpp:213] stream_status={stream_id=5, account="", supports=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=DOWNLOADING, interface="", authority="ws.okx.com:8443", path="/ws/v5/public", proxy=""}
+I1106 15:57:31.296501 9746 L0 download.hpp:67] Begin
+I1106 15:57:31.296503 9746 L0 download.hpp:172] Request LOGIN...
+I1106 15:57:31.296512 9746 L0 market_data.cpp:213] stream_status={stream_id=5, account="", supports=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=LOGIN_SENT, interface="", authority="ws.okx.com:8443", path="/ws/v5/public", proxy=""}
+I1106 15:57:31.310231 9746 L0 download.hpp:149] Completed LOGIN
+I1106 15:57:31.310238 9746 L0 market_data.cpp:213] stream_status={stream_id=5, account="", supports=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=READY, interface="", authority="ws.okx.com:8443", path="/ws/v5/public", proxy=""}
+I1106 15:57:31.310243 9746 L0 download.hpp:163] Done!
+I1106 15:57:31.317531 9746 L0 market_data.cpp:393] Request instruments...
+I1106 15:57:31.317553 9746 L0 market_data.cpp:409] event={status={title="Trading bot scheduled maintenance", state=SCHEDULED, begin=1731057000000ms, end=1731057600000ms, href="", service_type=7, system="unified", sche_desc="Rescheduled from  2024-11-06T09:10:00.000Z to 2024-11-08T09:10:00.000Z", ts=1730859770446ms, pre_open_begin="", env=1, maint_type=1}, trace_info={source_receive_time=441936446599463ns, origin_create_time=441936446599463ns, origin_create_time_utc=1730908651317534274ns}}
+I1106 15:57:31.317558 9746 L0 rest.cpp:335] Download instruments...
+I1106 15:57:31.325017 9746 L0 download.hpp:149] Completed LOGIN
+I1106 15:57:31.325020 9746 L0 download.hpp:172] Request SUBSCRIBE...
+I1106 15:57:31.336883 9746 L0 download.hpp:149] Completed SUBSCRIBE
+I1106 15:57:31.336886 9746 L0 download.hpp:172] Request BALANCE...
+I1106 15:57:31.336887 9746 L0 drop_copy.cpp:893] Requesting balance download...
+W1106 15:57:31.351287 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [InstrumentsItem] field="auctionEndTime" (value="")
+I1106 15:57:31.353312 9746 L0 rest.cpp:322] Instruments 25 / 614
+I1106 15:57:31.353326 9746 L0 market_data.cpp:303] DEBUG: using channel="books50-l2-tbt"
+I1106 15:57:31.353330 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="BTC-USDT"
+I1106 15:57:31.353332 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="SOL-USDT"
+I1106 15:57:31.353332 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="ADA-USDT"
+I1106 15:57:31.353333 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="AGLD-USDT"
+I1106 15:57:31.353334 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="ALGO-USDT"
+I1106 15:57:31.353334 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="ATH-USDT"
+I1106 15:57:31.353337 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="CRO-USDT"
+I1106 15:57:31.353338 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="DOT-USDT"
+I1106 15:57:31.353339 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="LINK-USDT"
+I1106 15:57:31.353339 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="LTC-USDT"
+I1106 15:57:31.353342 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="NEAR-USDT"
+I1106 15:57:31.353342 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="TRX-USDT"
+I1106 15:57:31.353343 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="WOO-USDT"
+I1106 15:57:31.353344 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="BTC-USDC"
+I1106 15:57:31.353345 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="SOL-USDC"
+I1106 15:57:31.353348 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="ADA-USDC"
+I1106 15:57:31.353349 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="AGLD-USDC"
+I1106 15:57:31.353349 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="ALGO-USDC"
+I1106 15:57:31.353350 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="ATH-USDC"
+I1106 15:57:31.353351 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="CRO-USDC"
+I1106 15:57:31.353351 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="DOT-USDC"
+I1106 15:57:31.353352 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="LINK-USDC"
+I1106 15:57:31.353352 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="LTC-USDC"
+I1106 15:57:31.353354 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="NEAR-USDC"
+I1106 15:57:31.353355 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="TRX-USDC"
+I1106 15:57:31.365378 9746 L0 drop_copy.cpp:913] Balance download has completed!
+I1106 15:57:31.365382 9746 L0 download.hpp:149] Completed BALANCE
+I1106 15:57:31.365383 9746 L0 download.hpp:172] Request POSITIONS...
+I1106 15:57:31.365384 9746 L0 drop_copy.cpp:898] Requesting positions download...
+I1106 15:57:31.371363 9746 L0 rest.cpp:322] Instruments 37 / 232
+I1106 15:57:31.371368 9746 L0 gateway.cpp:183] Create MarketData (stream_id=6, index=1)
+I1106 15:57:31.384965 9746 L0 market_data.cpp:303] DEBUG: using channel="books50-l2-tbt"
+I1106 15:57:31.384973 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="BTC-USD-SWAP"
+I1106 15:57:31.384974 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="SOL-USD-SWAP"
+I1106 15:57:31.384975 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="ADA-USD-SWAP"
+I1106 15:57:31.384976 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="ALGO-USD-SWAP"
+I1106 15:57:31.384977 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="DOT-USD-SWAP"
+I1106 15:57:31.384977 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="LINK-USD-SWAP"
+I1106 15:57:31.384978 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=5, inst_id="LTC-USD-SWAP"
+I1106 15:57:31.389006 9746 L0 rest.cpp:322] Instruments 16 / 35
+I1106 15:57:31.389011 9746 L0 gateway.cpp:183] Create MarketData (stream_id=7, index=2)
+I1106 15:57:31.403305 9746 L0 retry_connection_manager.cpp:193] Connected (host="ws.okx.com", port=8443)
+I1106 15:57:31.403311 9746 L0 client.cpp:156] Upgrading (host="ws.okx.com", port=8443, path="/ws/v5/public")...
+W1106 15:57:31.403480 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [PositionsItem] field="clSpotInUseAmt" (value="")
+W1106 15:57:31.403486 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [PositionsItem] field="maxSpotInUseAmt" (value="")
+I1106 15:57:31.403520 9746 L0 drop_copy.cpp:922] Positions download has completed!
+I1106 15:57:31.403523 9746 L0 download.hpp:149] Completed POSITIONS
+I1106 15:57:31.403524 9746 L0 download.hpp:172] Request ORDERS...
+I1106 15:57:31.403526 9746 L0 drop_copy.cpp:903] Requesting order download...
+I1106 15:57:31.408698 9746 L0 retry_connection_manager.cpp:193] Connected (host="ws.okx.com", port=8443)
+I1106 15:57:31.408703 9746 L0 client.cpp:156] Upgrading (host="ws.okx.com", port=8443, path="/ws/v5/public")...
+W1106 15:57:31.422100 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [AccountItem] field="accAvgPx" (value="")
+W1106 15:57:31.422106 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [AccountItem] field="clSpotInUseAmt" (value="")
+W1106 15:57:31.422109 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [AccountItem] field="maxSpotInUseAmt" (value="")
+W1106 15:57:31.422111 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [AccountItem] field="openAvgPx" (value="")
+W1106 15:57:31.422113 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [AccountItem] field="spotBal" (value="")
+W1106 15:57:31.422115 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [AccountItem] field="spotCopyTradingEq" (value="0")
+W1106 15:57:31.422117 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [AccountItem] field="spotUpl" (value="")
+W1106 15:57:31.422118 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [AccountItem] field="spotUplRatio" (value="")
+W1106 15:57:31.422125 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [AccountItem] field="totalPnl" (value="")
+W1106 15:57:31.422126 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [AccountItem] field="totalPnlRatio" (value="")
+I1106 15:57:31.424196 9746 L0 drop_copy.cpp:931] Order download has completed!
+I1106 15:57:31.424199 9746 L0 download.hpp:149] Completed ORDERS
+I1106 15:57:31.424203 9746 L0 drop_copy.cpp:461] stream_status={stream_id=4, account="A1", supports=CREATE_ORDER|MODIFY_ORDER|CANCEL_ORDER|ORDER_ACK|ORDER|TRADE|FUNDS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=READY, interface="", authority="ws.okx.com:8443", path="/ws/v5/private", proxy=""}
+I1106 15:57:31.424208 9746 L0 download.hpp:163] Done!
+I1106 15:57:31.442229 9746 L0 market_data.cpp:213] stream_status={stream_id=6, account="", supports=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=DOWNLOADING, interface="", authority="ws.okx.com:8443", path="/ws/v5/public", proxy=""}
+I1106 15:57:31.442236 9746 L0 download.hpp:67] Begin
+I1106 15:57:31.442238 9746 L0 download.hpp:172] Request LOGIN...
+I1106 15:57:31.442248 9746 L0 market_data.cpp:213] stream_status={stream_id=6, account="", supports=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=LOGIN_SENT, interface="", authority="ws.okx.com:8443", path="/ws/v5/public", proxy=""}
+I1106 15:57:31.456268 9746 L0 download.hpp:149] Completed LOGIN
+I1106 15:57:31.456273 9746 L0 market_data.cpp:213] stream_status={stream_id=6, account="", supports=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=READY, interface="", authority="ws.okx.com:8443", path="/ws/v5/public", proxy=""}
+I1106 15:57:31.456287 9746 L0 market_data.cpp:303] DEBUG: using channel="books50-l2-tbt"
+I1106 15:57:31.456294 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="TRX-USD-SWAP"
+I1106 15:57:31.456297 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="BTC-USDT-SWAP"
+I1106 15:57:31.456298 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="SOL-USDT-SWAP"
+I1106 15:57:31.456298 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="XRP-USDT-SWAP"
+I1106 15:57:31.456300 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="ADA-USDT-SWAP"
+I1106 15:57:31.456301 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="AGLD-USDT-SWAP"
+I1106 15:57:31.456301 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="ALGO-USDT-SWAP"
+I1106 15:57:31.456302 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="ATH-USDT-SWAP"
+I1106 15:57:31.456303 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="CRO-USDT-SWAP"
+I1106 15:57:31.456304 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="CVC-USDT-SWAP"
+I1106 15:57:31.456306 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="CVX-USDT-SWAP"
+I1106 15:57:31.456307 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="DOT-USDT-SWAP"
+I1106 15:57:31.456307 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="ENS-USDT-SWAP"
+I1106 15:57:31.456308 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="GLM-USDT-SWAP"
+I1106 15:57:31.456309 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="ID-USDT-SWAP"
+I1106 15:57:31.456310 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="KSM-USDT-SWAP"
+I1106 15:57:31.456310 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="LINK-USDT-SWAP"
+I1106 15:57:31.456311 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="LTC-USDT-SWAP"
+I1106 15:57:31.456311 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="NEAR-USDT-SWAP"
+I1106 15:57:31.456312 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="RAY-USDT-SWAP"
+I1106 15:57:31.456313 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="RON-USDT-SWAP"
+I1106 15:57:31.456314 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="RSR-USDT-SWAP"
+I1106 15:57:31.456314 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="SLP-USDT-SWAP"
+I1106 15:57:31.456315 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="SNX-USDT-SWAP"
+I1106 15:57:31.456316 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="SWEAT-USDT-SWAP"
+I1106 15:57:31.456316 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="TRX-USDT-SWAP"
+I1106 15:57:31.456318 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="WOO-USDT-SWAP"
+I1106 15:57:31.456319 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="XTZ-USDT-SWAP"
+I1106 15:57:31.456320 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="ZRX-USDT-SWAP"
+I1106 15:57:31.456320 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="BTC-USDC-SWAP"
+I1106 15:57:31.456321 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="BTC-USD-241108"
+I1106 15:57:31.456322 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=6, inst_id="BTC-USD-241115"
+I1106 15:57:31.456322 9746 L0 download.hpp:163] Done!
+I1106 15:57:31.456946 9746 L0 market_data.cpp:213] stream_status={stream_id=7, account="", supports=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=DOWNLOADING, interface="", authority="ws.okx.com:8443", path="/ws/v5/public", proxy=""}
+I1106 15:57:31.456951 9746 L0 download.hpp:67] Begin
+I1106 15:57:31.456953 9746 L0 download.hpp:172] Request LOGIN...
+I1106 15:57:31.456961 9746 L0 market_data.cpp:213] stream_status={stream_id=7, account="", supports=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=LOGIN_SENT, interface="", authority="ws.okx.com:8443", path="/ws/v5/public", proxy=""}
+I1106 15:57:31.469391 9746 L0 download.hpp:149] Completed LOGIN
+I1106 15:57:31.469398 9746 L0 market_data.cpp:213] stream_status={stream_id=7, account="", supports=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=READY, interface="", authority="ws.okx.com:8443", path="/ws/v5/public", proxy=""}
+I1106 15:57:31.469408 9746 L0 market_data.cpp:303] DEBUG: using channel="books50-l2-tbt"
+I1106 15:57:31.469416 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USD-241129"
+I1106 15:57:31.469417 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USD-241227"
+I1106 15:57:31.469418 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USD-250328"
+I1106 15:57:31.469419 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USD-250627"
+I1106 15:57:31.469420 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USDT-241108"
+I1106 15:57:31.469421 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USDT-241115"
+I1106 15:57:31.469422 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USDT-241129"
+I1106 15:57:31.469422 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USDT-241227"
+I1106 15:57:31.469423 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USDT-250328"
+I1106 15:57:31.469424 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USDT-250627"
+I1106 15:57:31.469425 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USDC-241108"
+I1106 15:57:31.469426 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USDC-241115"
+I1106 15:57:31.469426 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USDC-241227"
+I1106 15:57:31.469427 9746 L0 market_data.cpp:308] DEBUG SUBSCRIBE stream_id=7, inst_id="BTC-USDC-250328"
+I1106 15:57:31.469428 9746 L0 download.hpp:163] Done!
+W1106 15:57:31.476291 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [FillsItem] field="subType" (value="1")
+I1106 15:58:32.088186 9727 L0 controller.cpp:527] +++ ACCESS TOKEN EXPIRES 1730915911s (IN 119 MINUTE(S)) +++
+I1106 15:58:39.521079 9727 L0 ipc_listener.cpp:64] Got connection fd=52
+I1106 15:58:39.521095 9727 L0 controller.cpp:363] Got connection
+I1106 15:58:39.521194 9727 L0 session.cpp:57] Adding user id=31, name="RAY"
+I1106 15:58:39.521335 9746 L0 state.cpp:80] subscribe={accounts={"A1"}, symbols_by_exchange={: {"BTC|USD"}, gate-futures: {"RAY_USDT"}, okx: {"RAY-USDT-SWAP"}}, order_cancel_policy=BY_ACCOUNT, order_management=UNDEFINED}, drop_copy=false
+W1106 15:58:49.822105 9746 L0 log_once.cpp:35] *** PLEASE REPORT *** [CancelOrderAckItem] field="ts" (value="1730908729812")
+W1106 16:01:33.371069 9727 L0 connection.cpp:149] Disconnected
+I1106 16:01:33.371078 9727 L0 session.cpp:64] Removing user id=31, name="RAY"
+W1106 16:01:33.371085 9746 L0 state.cpp:120] Disconnected: source="RAY", order_cancel_policy=BY_ACCOUNT
+W1106 16:01:33.371089 9746 L0 state.cpp:129] *** CANCEL ALL ACCOUNT ORDERS ***
+W1106 16:01:33.371092 9746 L0 state.cpp:145] - account="A1"
+I1106 16:01:33.385855 9727 L0 controller.cpp:215] Detected zombie client session
+I1106 16:01:33.486146 9727 L0 controller.cpp:208] Removed 1 zombied client session(s) (remaining: 0)
+I1106 16:29:42.970287 9727 L0 controller.cpp:527] +++ ACCESS TOKEN EXPIRES 1730917782s (IN 119 MINUTE(S)) +++
+W1106 16:43:55.395429 9727 L0 controller.cpp:159] *** SIGNAL: TERMINATE ***
+I1106 16:43:55.395447 9727 L0 pollster.cpp:80] Dispatcher requested to stop...
+I1106 16:43:55.395451 9746 L0 gateway.cpp:106] Stopping...
+I1106 16:43:55.395487 9746 L0 pollster.cpp:96] Dispatcher thread has terminated
+I1106 16:43:55.395560 9727 L0 client.cpp:261] Stopping the authenticator
+I1106 16:43:55.395565 9727 L0 controller.cpp:131] Done!
+I1106 16:43:55.427573 9727 L0 service.cpp:94] ===== STOP =====
