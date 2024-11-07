@@ -7,8 +7,8 @@ ROQ_v=0 roq-udp-simple \
     --exchange_maker="gate-futures" \
     --exchange_taker="okx" \
     --enable_trading=true \
-    --spread_high=1.001766 \
-    --spread_low=0.9994 \
+    --spread_high=1.0025 \
+    --spread_low=1.0 \
     --trigger_spread_margin=0.00005 \
     --max_position_taker=1000 \
     --max_position_maker=10000 \
@@ -17,6 +17,6 @@ ROQ_v=0 roq-udp-simple \
     --taker_multiplier=1 \
     --close_positions=false \
     --taker_min_order_size=1 \
-    ~/okx.sock \
-    ~/udp_pub_tokyo.sock \
-    ~/udp_sub_tokyo.sock \
+    ~/sockets/okx.sock \
+    ~/sockets/udp_pub_tokyo.sock \
+    ~/sockets/udp_sub_tokyo.sock \

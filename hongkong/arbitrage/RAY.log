@@ -1,0 +1,116 @@
+nohup: ignoring input
+I1106 15:42:56.515307 9598 logging: async
+I1106 15:42:56.515332 9598 L0 service.cpp:67] ===== START =====
+I1106 15:42:56.515334 9598 L0 service.cpp:68] package name  : roq-udp
+I1106 15:42:56.515335 9598 L0 service.cpp:69] build version : 1.0.2
+I1106 15:42:56.515335 9598 L0 service.cpp:70] build number  : 
+I1106 15:42:56.515336 9598 L0 service.cpp:71] build type    : 
+I1106 15:42:56.515336 9598 L0 service.cpp:72] git hash      : 
+I1106 15:42:56.515337 9598 L0 service.cpp:73] compile time  : Nov  6 2024 16:20:47
+I1106 15:42:56.515338 9598 L0 service.cpp:74] host          : 
+I1106 15:42:56.515340 9598 L0 service.cpp:75] uname -v      : #18~22.04.1-Ubuntu SMP Thu Oct  3 19:57:42 UTC 2024
+I1106 15:42:56.515341 9598 L0 service.cpp:76] uname -s      : Linux
+I1106 15:42:56.515343 9598 L0 service.cpp:77] uname -r      : 6.8.0-1017-aws
+I1106 15:42:56.515347 9598 L0 service.cpp:78] cwd           : /home/ubuntu/strategy/hongkong/arbitrage
+I1106 15:42:56.515349 9598 L0 service.cpp:79] pid           : 9598
+I1106 15:42:56.515364 9598 L0 settings.cpp:54] settings={app={name="RAY", drop_copy=false}, loop={cpu_affinity=-1, sleep=500ns, timer_freq=100000000ns, scheduling_policy="", scheduling_priority=-1}, service={listen_address=""}, common={decode_buffer_size=8388608, relax_request_validation=false}}
+I1106 15:42:56.515618 9598 L0 context_factory.cpp:19] Create libevent context (config={recv={buffer_size=4096, buffer_count=32}, send={buffer_size=1048576, buffer_count=32}})
+I1106 15:42:56.515784 9598 L0 base.cpp:29] Initializing openssl...
+I1106 15:42:56.519126 9598 L0 factory.cpp:33] The HTTP service will *not* be started
+I1106 15:42:56.524322 9598 L0 controller.cpp:95] session_id="75e1b592-7a12-4714-95d4-ab910d7b764d"
+I1106 15:42:56.524327 9598 L0 controller.cpp:99] Dispatching...
+I1106 15:42:56.524329 9598 L0 controller.cpp:102] Starting event loop thread...
+I1106 15:42:56.524439 9601 L0 controller.cpp:136] Event loop thread is now running
+I1106 15:42:57.525314 9601 L0 session_manager.cpp:56] Connecting "unix:///home/ubuntu/sockets/okx.sock"
+I1106 15:42:57.525436 9601 L0 session_manager.cpp:56] Connecting "unix:///home/ubuntu/sockets/udp_pub_tokyo.sock"
+I1106 15:42:57.525528 9601 L0 session_manager.cpp:56] Connecting "unix:///home/ubuntu/sockets/udp_sub_tokyo.sock"
+I1106 15:42:57.525607 9601 L0 session.cpp:29] Adding name="okx" (user_id=31)
+I1106 15:42:57.525660 9601 L0 session.cpp:29] Adding name="udp-publisher" (user_id=5)
+I1106 15:42:57.525683 9601 L0 session.cpp:29] Adding name="udp-subscriber" (user_id=5)
+I1106 15:42:57.525713 9598 L0 pollster.cpp:359] Adding name="okx" (user_id=31)
+I1106 15:42:57.525729 9598 L0 gateway.cpp:42] [okx] connected=true
+I1106 15:42:57.525740 9598 L0 strategy.cpp:56] event: {connected={}, message_info={source=0, source_name="okx", source_session_id=00000000-0000-0000-0000-000000000000, source_seqno=0, receive_time_utc=0ns, receive_time=441062654792408ns, source_send_time=441062654792408ns, source_receive_time=441062654792408ns, origin_create_time=441062654792408ns, origin_create_time_utc=0ns, is_last=true, opaque=0}}
+I1106 15:42:57.525744 9598 L0 strategy.cpp:58] 1+2=3
+I1106 15:42:57.525760 9598 L0 pollster.cpp:359] Adding name="udp-publisher" (user_id=5)
+I1106 15:42:57.525778 9598 L0 strategy.cpp:56] event: {connected={}, message_info={source=1, source_name="udp-publisher", source_session_id=00000000-0000-0000-0000-000000000000, source_seqno=0, receive_time_utc=0ns, receive_time=441062654839936ns, source_send_time=441062654839936ns, source_receive_time=441062654839936ns, origin_create_time=441062654839936ns, origin_create_time_utc=0ns, is_last=true, opaque=0}}
+I1106 15:42:57.525781 9598 L0 strategy.cpp:58] 1+2=3
+I1106 15:42:57.525840 9598 L0 pollster.cpp:359] Adding name="udp-subscriber" (user_id=5)
+I1106 15:42:57.525850 9598 L0 strategy.cpp:56] event: {connected={}, message_info={source=2, source_name="udp-subscriber", source_session_id=00000000-0000-0000-0000-000000000000, source_seqno=0, receive_time_utc=0ns, receive_time=441062654911450ns, source_send_time=441062654911450ns, source_receive_time=441062654911450ns, origin_create_time=441062654911450ns, origin_create_time_utc=0ns, is_last=true, opaque=0}}
+I1106 15:42:57.525851 9598 L0 strategy.cpp:58] 1+2=3
+I1106 15:42:57.525857 9598 L0 gateway.cpp:21] Download begin print = {account=""}, source = okx
+I1106 15:42:57.525859 9598 L0 gateway.cpp:31] [okx] download=true, download_pub=true, download_sub=true
+I1106 15:42:57.525864 9598 L0 strategy.cpp:73] event: {download_begin={account=""}, message_info={source=0, source_name="okx", source_session_id=ba890ea6-d994-4924-9865-4e06704108cc, source_seqno=1180755, receive_time_utc=1730907777525855562ns, receive_time=441062654920753ns, source_send_time=441062654880835ns, source_receive_time=441062654880835ns, origin_create_time=441062654880835ns, origin_create_time_utc=0ns, is_last=true, opaque=72091678898388992}}
+I1106 15:42:57.525869 9598 L0 gateway.cpp:115] [okx] trading_status=UNDEFINED
+I1106 15:42:57.525872 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=307870242ns, Latency_utc=307871862ns, Latency_gate=1730907777525871862ns
+I1106 15:42:57.525878 9598 L0 gateway.cpp:48] Download END print = {account="", max_order_id=0}
+I1106 15:42:57.525880 9598 L0 gateway.cpp:62] [okx] download=false, download_pub=true, download_sub=true, client_working=false
+I1106 15:42:57.525886 9598 L0 strategy.cpp:83] event: {download_end={account="", max_order_id=0}, message_info={source=0, source_name="okx", source_session_id=ba890ea6-d994-4924-9865-4e06704108cc, source_seqno=1180761, receive_time_utc=1730907777525877338ns, receive_time=441062654942521ns, source_send_time=441062654939054ns, source_receive_time=441062654939054ns, origin_create_time=441062654939054ns, origin_create_time_utc=0ns, is_last=true, opaque=72091678898388992}}
+I1106 15:42:57.525889 9598 L0 gateway.cpp:21] Download begin print = {account="A1"}, source = okx
+I1106 15:42:57.525891 9598 L0 gateway.cpp:31] [okx] download=true, download_pub=true, download_sub=true
+I1106 15:42:57.525897 9598 L0 strategy.cpp:73] event: {download_begin={account="A1"}, message_info={source=0, source_name="okx", source_session_id=ba890ea6-d994-4924-9865-4e06704108cc, source_seqno=1180762, receive_time_utc=1730907777525888299ns, receive_time=441062654953483ns, source_send_time=441062654940589ns, source_receive_time=441062654940589ns, origin_create_time=441062654940589ns, origin_create_time_utc=0ns, is_last=true, opaque=72091678898388992}}
+I1106 15:42:57.525914 9598 L0 gateway.cpp:21] Download begin print = {account=""}, source = udp-publisher
+I1106 15:42:57.525918 9598 L0 gateway.cpp:31] [okx] download=true, download_pub=true, download_sub=true
+I1106 15:42:57.525920 9598 L0 gateway.cpp:48] Download END print = {account="", max_order_id=0}
+I1106 15:42:57.525922 9598 L0 gateway.cpp:62] [okx] download=true, download_pub=false, download_sub=true, client_working=false
+I1106 15:42:57.525930 9598 L0 strategy.cpp:88] event: {gateway_status={account="", supported=, available=, unavailable=}, message_info={source=1, source_name="udp-publisher", source_session_id=3866f519-7db8-4811-9e76-6809e582c0a0, source_seqno=3047, receive_time_utc=1730907777525923788ns, receive_time=441062654988972ns, source_send_time=441062654972447ns, source_receive_time=441062654972447ns, origin_create_time=441062654972447ns, origin_create_time_utc=0ns, is_last=true, opaque=72063091596066816}}
+I1106 15:42:57.525959 9598 L0 gateway.cpp:21] Download begin print = {account=""}, source = udp-subscriber
+I1106 15:42:57.525963 9598 L0 gateway.cpp:31] [okx] download=true, download_pub=false, download_sub=true
+I1106 15:42:57.525965 9598 L0 gateway.cpp:48] Download END print = {account="", max_order_id=0}
+I1106 15:42:57.525966 9598 L0 gateway.cpp:62] [okx] download=true, download_pub=false, download_sub=false, client_working=false
+I1106 15:42:57.525974 9598 L0 strategy.cpp:88] event: {gateway_status={account="", supported=, available=, unavailable=}, message_info={source=2, source_name="udp-subscriber", source_session_id=1e861d9a-2a38-44f9-8ce0-8fb0851063be, source_seqno=3053, receive_time_utc=1730907777525967860ns, receive_time=441062655033044ns, source_send_time=441062655018791ns, source_receive_time=441062655018791ns, origin_create_time=441062655018791ns, origin_create_time_utc=0ns, is_last=true, opaque=72063091596066816}}
+I1106 15:42:57.525982 9598 L0 gateway.cpp:99] [okx] OM = false, status = {account="A1", supported=CREATE_ORDER|MODIFY_ORDER|CANCEL_ORDER|ORDER_ACK|ORDER|TRADE|FUNDS, available=CREATE_ORDER|MODIFY_ORDER|CANCEL_ORDER|ORDER_ACK|ORDER|TRADE|FUNDS, unavailable=}
+I1106 15:42:57.525995 9598 L0 strategy.cpp:88] event: {gateway_status={account="A1", supported=CREATE_ORDER|MODIFY_ORDER|CANCEL_ORDER|ORDER_ACK|ORDER|TRADE|FUNDS, available=CREATE_ORDER|MODIFY_ORDER|CANCEL_ORDER|ORDER_ACK|ORDER|TRADE|FUNDS, unavailable=}, message_info={source=0, source_name="okx", source_session_id=ba890ea6-d994-4924-9865-4e06704108cc, source_seqno=1180763, receive_time_utc=1730907777525977796ns, receive_time=441062655042978ns, source_send_time=441062654941010ns, source_receive_time=441062654941010ns, origin_create_time=441062654941010ns, origin_create_time_utc=0ns, is_last=true, opaque=72091678898388992}}
+I1106 15:42:57.526000 9598 L0 gateway.cpp:48] Download END print = {account="A1", max_order_id=2684027343988}
+I1106 15:42:57.526002 9598 L0 gateway.cpp:50] max_order_id=2684027343988
+I1106 15:42:57.526003 9598 L0 gateway.cpp:62] [okx] download=false, download_pub=false, download_sub=false, client_working=false
+I1106 15:42:57.526009 9598 L0 strategy.cpp:83] event: {download_end={account="A1", max_order_id=2684027343988}, message_info={source=0, source_name="okx", source_session_id=ba890ea6-d994-4924-9865-4e06704108cc, source_seqno=1180764, receive_time_utc=1730907777525998937ns, receive_time=441062655064121ns, source_send_time=441062654943435ns, source_receive_time=441062654943435ns, origin_create_time=441062654943435ns, origin_create_time_utc=0ns, is_last=true, opaque=72091678898388992}}
+I1106 15:42:57.526015 9598 L0 gateway.cpp:81] [okx] market_data=true
+I1106 15:42:57.526023 9598 L0 strategy.cpp:88] event: {gateway_status={account="", supported=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, available=REFERENCE_DATA|MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, unavailable=}, message_info={source=0, source_name="okx", source_session_id=ba890ea6-d994-4924-9865-4e06704108cc, source_seqno=1180766, receive_time_utc=1730907777526014175ns, receive_time=441062655079361ns, source_send_time=441062654944887ns, source_receive_time=441062654944887ns, origin_create_time=441062654944887ns, origin_create_time_utc=0ns, is_last=true, opaque=72091678898388992}}
+I1106 15:42:57.775929 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:42:57.775945 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=7908687ns, Latency_utc=7942928ns, Latency_gate=1730907777775942928ns
+I1106 15:42:57.844458 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:42:57.844465 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=6452059ns, Latency_utc=6463939ns, Latency_gate=1730907777844463939ns
+I1106 15:42:57.857288 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:42:57.857292 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=9286463ns, Latency_utc=9291698ns, Latency_gate=1730907777857291698ns
+I1106 15:42:58.033746 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:42:58.033751 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=5743118ns, Latency_utc=5750735ns, Latency_gate=1730907778033750735ns
+I1106 15:42:58.042226 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:42:58.042230 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=4224688ns, Latency_utc=4229390ns, Latency_gate=1730907778042229390ns
+I1106 15:42:58.370947 9598 L0 gateway.cpp:126] [okx] connected = true, download = false , trading_status = OPEN , market_data = true , order_management = false, download_sub = false , download_pub = false
+I1106 15:42:58.370951 9598 L0 gateway.cpp:129] [okx] ready=true
+I1106 15:42:58.370954 9598 L0 messages.cpp:175] send taker ready status: 1
+I1106 15:42:58.370960 9598 L0 messages.cpp:188] Sent taker_working from Messages.cpp
+I1106 15:42:58.442127 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:42:58.442131 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=4124434ns, Latency_utc=4130215ns, Latency_gate=1730907778442130215ns
+I1106 15:42:58.835389 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:42:58.835396 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=7383482ns, Latency_utc=7395030ns, Latency_gate=1730907778835395030ns
+I1106 15:42:59.123856 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:42:59.123864 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=5851200ns, Latency_utc=5862506ns, Latency_gate=1730907779123862506ns
+I1106 15:42:59.370947 9598 L0 gateway_taker.cpp:21] In Timer send Ping
+I1106 15:42:59.370958 9598 L0 messages.cpp:206] Sent Ping from Messages.cpp
+I1106 15:43:00.222405 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:43:00.222416 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=4394728ns, Latency_utc=4413423ns, Latency_gate=1730907780222413423ns
+I1106 15:43:00.235178 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:43:00.235182 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=7176626ns, Latency_utc=7180837ns, Latency_gate=1730907780235180837ns
+I1106 15:43:00.324005 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:43:00.324009 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=46002301ns, Latency_utc=46008515ns, Latency_gate=1730907780324008515ns
+I1106 15:43:00.324072 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:43:00.324075 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=36071397ns, Latency_utc=36074142ns, Latency_gate=1730907780324074142ns
+I1106 15:43:00.348230 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:43:00.348236 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=10228713ns, Latency_utc=10235181ns, Latency_gate=1730907780348235181ns
+I1106 15:43:00.370947 9598 L0 gateway.cpp:126] [okx] connected = true, download = false , trading_status = OPEN , market_data = true , order_management = false, download_sub = false , download_pub = false
+I1106 15:43:00.412947 9598 L0 messages.cpp:93] Sent ToB from Messages.cpp
+I1106 15:43:00.412950 9598 L0 strategy.cpp:137] [ToB] Latency_receive_time_utc=4944976ns, Latency_utc=4949488ns, Latency_gate=1730907780412949488ns
+I1106 15:43:01.370950 9598 L0 gateway_taker.cpp:21] In Timer send Ping
+I1106 15:43:01.370962 9598 L0 gateway_taker.cpp:28] Timer triggered, Pong still is 1
+W1106 15:43:01.371009 9601 L0 controller.cpp:148] *** SIGNAL: TERMINATE ***
+I1106 15:43:01.371014 9601 L0 controller.cpp:142] Event loop thread has terminated
+I1106 15:43:01.371057 9598 L0 gateway.cpp:242] Sell Turnover = 0 
+ Buy Turnover = 0 
+ Total Turnover = 0 
+ Fees = 0 
+ PnL = 0, 
+ PnL without fees = 0
+I1106 15:43:01.371064 9598 L0 controller.cpp:108] Waiting for event loop thread to terminate...
+I1106 15:43:01.371076 9598 L0 controller.cpp:114] Done!
+I1106 15:43:01.372245 9598 L0 service.cpp:94] ===== STOP =====
