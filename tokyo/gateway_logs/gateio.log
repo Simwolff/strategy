@@ -1,0 +1,143 @@
+I1106 15:57:45.659749 21597 logging: async
+I1106 15:57:45.659793 21597 L0 service.cpp:67] ===== START =====
+I1106 15:57:45.659795 21597 L0 service.cpp:68] package name  : roq-gate-futures
+I1106 15:57:45.659796 21597 L0 service.cpp:69] build version : 1.0.2
+I1106 15:57:45.659797 21597 L0 service.cpp:70] build number  : 20241106
+I1106 15:57:45.659797 21597 L0 service.cpp:71] build type    : Release
+I1106 15:57:45.659798 21597 L0 service.cpp:72] git hash      : g407eabe
+I1106 15:57:45.659798 21597 L0 service.cpp:73] compile time  : Nov  6 2024 06:35:01
+I1106 15:57:45.659799 21597 L0 service.cpp:74] host          : x86_64-conda-linux-gnu
+I1106 15:57:45.659801 21597 L0 service.cpp:75] uname -v      : #16~22.04.1-Ubuntu SMP Mon Aug 19 19:38:17 UTC 2024
+I1106 15:57:45.659803 21597 L0 service.cpp:76] uname -s      : Linux
+I1106 15:57:45.659804 21597 L0 service.cpp:77] uname -r      : 6.8.0-1015-aws
+I1106 15:57:45.659818 21597 L0 service.cpp:78] cwd           : /home/ubuntu/strategy/tokyo
+I1106 15:57:45.659819 21597 L0 service.cpp:79] pid           : 21597
+I1106 15:57:45.659937 21597 L0 settings.cpp:18] settings={exchange="gate-futures", misc={request_limit=80, request_limit_interval=10000000000ns, self_trade_prevention="CN", encode_buffer_size=1048576, decode_buffer_size=10485760, mbp_allow_price_inversion=true, order_book_depth=20, order_book_freq=100000000ns}, rest={uri={scheme="https", userinfo="", host="api.gateio.ws", port=0, path="/api/v4", query="", fragment=""}, proxy={scheme="", userinfo="", host="", port=0, path="", query="", fragment=""}, ping_freq=5000000000ns, ping_path="/", request_timeout=30000000000ns}, ws={uri={scheme="wss", userinfo="", host="fx-ws.gateio.ws", port=0, path="/v4/ws/usdt", query="", fragment=""}, ping_freq=5000000000ns, request_timeout=15000000000ns, max_subscriptions_per_stream=100, mbp_request_delay=500000000ns, mbp_request_max_retries=3}, download={trades_lookback=300000000000ns, trades_lookback_on_restart=0ns}, server={package={name="roq-gate-futures", build_number="20241106"}, app={name="gate-futures", api="usdt"}, config={file="gateio_live.toml", secrets_file=""}, database={uri="", username="", password=***, name="roq_cache", retain_stale_orders_for=604800000000000ns}, io={backend="libevent", recv_buffer_size=0, recv_buffer_count=0, send_buffer_size=0, send_buffer_count=0}, net={connection_timeout=5000000000ns, disconnect_on_idle_timeout=30000000000ns, tls_validate_certificate=false}, loop={cpu_affinity=-1, sleep=0ns, timer_freq=250ns, scheduling_policy="", scheduling_priority=-1}, cache={dir="roq-cache", retain_config_users_for=604800000000000ns}, udp={snapshot_address=, snapshot_port=, incremental_address=, incremental_port=, snapshot_delay_freq=10000000ns, snapshot_repeat_freq=60000000000ns, incremental_heartbeat_freq=3000000000ns, encoding="flatbuffers", enable_mbp=false}, event_log={input_buffer_size=16777216, output_buffer_size=16777216, compression_level=4, dir="", iso_week=true, sync_freq=300000000000ns, utimes_on_sync=false, encoding="flatbuffers", symlink=true}, client={listen_address="/home/ubuntu/sockets/gateio.sock"}, ipc={copy_out_buffer_size=8388608, spmc_queue_size=134217728, spsc_queue_size=1048576}, service={listen_address="", url_prefix="", web_dir=""}, auth={keys_file="/home/ubuntu/keys.json", license_manager_uri=[https://auth-1.roq-trading.com/, https://auth-2.roq-trading.com/], proxy={scheme="", userinfo="", host="", port=0, path="", query="", fragment=""}, is_uat=false, hide_name=false, refresh_freq=1800000000000ns, retry_freq=60000000000ns, lock_period=7200000000000ns}, journal={cache=false, multicast_port=0, multicast_address="", local_interface="", multicast_ttl=4, multicast_loop=false, listen_port=0, test_disable_local_cache=false}, experimental={mbp_checksum=false, enable_risk=false,enable_portfolio=false,enable_reduce_only=falseenable_rest_cache=false, enable_time_series=false}}}
+I1106 15:57:45.659965 21597 L0 reader.cpp:624] Parse config_file="gateio_live.toml", cache_dir="roq-cache"
+I1106 15:57:45.660005 21597 L0 directory.cpp:80] Ensure directory path="roq-cache/gate-futures/config" exists
+I1106 15:57:45.662238 21597 L0 context_factory.cpp:19] Create libevent context (config={recv={buffer_size=4096, buffer_count=32}, send={buffer_size=1048576, buffer_count=32}})
+I1106 15:57:45.662412 21597 L0 base.cpp:29] Initializing openssl...
+I1106 15:57:45.666677 21597 L0 dispatcher.cpp:295] Creating event-log...
+I1106 15:57:45.666728 21597 L0 dispatcher.cpp:302] Creating internal queue...
+I1106 15:57:45.667544 21597 L0 dispatcher.cpp:307] Creating broadcast queue...
+I1106 15:57:45.668564 21597 L0 cache.cpp:39] order_id seed 2684146566856
+I1106 15:57:45.680644 21597 L0 directory.cpp:80] Ensure directory path="roq-cache/gate-futures/oms" exists
+I1106 15:57:45.680676 21597 L0 directory.cpp:80] Ensure directory path="roq-cache/gate-futures/order" exists
+I1106 15:57:45.682255 21597 L0 dispatcher.cpp:404] Config hash="xogPDFvXNj_-N59uhjpz9pRkV3-bOLD_SQbMkF5UJqU="
+I1106 15:57:45.730341 21597 L0 context_factory.cpp:19] Create libevent context (config={recv={buffer_size=4096, buffer_count=32}, send={buffer_size=1048576, buffer_count=32}})
+I1106 15:57:45.731621 21597 L0 factory.cpp:33] The HTTP service will *not* be started
+I1106 15:57:45.731767 21597 L0 socket.cpp:277] Removing existing path="/home/ubuntu/sockets/gateio.sock"...
+I1106 15:57:45.731826 21597 L0 socket.cpp:279] Successfully removed path="/home/ubuntu/sockets/gateio.sock"
+I1106 15:57:45.737960 21597 L0 client.cpp:58] Reading keys from path="/home/ubuntu/keys.json"
+I1106 15:57:45.738036 21597 L0 client.cpp:194] Using license manager
+I1106 15:57:45.738059 21597 L0 directory.cpp:80] Ensure directory path="roq-cache/gate-futures/auth" exists
+I1106 15:57:45.739707 21597 L0 client.cpp:548] Reading access token from "roq-cache/gate-futures/auth/1730908512110"...
+I1106 15:57:45.739907 21597 L0 controller.cpp:527] +++ ACCESS TOKEN EXPIRES 1730915711s (IN 117 MINUTE(S)) +++
+I1106 15:57:45.740037 21597 L0 controller.cpp:121] Dispatching...
+W1106 15:57:45.740127 21597 L0 controller.cpp:126] *** REDUCED LOGGING ***
+I1106 15:57:45.740137 21597 L0 client.cpp:254] Starting the authenticator
+I1106 15:57:45.740222 21616 L0 pollster.cpp:87] Dispatcher thread is running
+I1106 15:57:45.740232 21616 L0 gateway.cpp:66] Starting...
+I1106 15:57:45.750598 21616 L0 retry_connection_manager.cpp:193] Connected (host="fx-ws.gateio.ws", port=443)
+I1106 15:57:45.750617 21616 L0 client.cpp:156] Upgrading (host="fx-ws.gateio.ws", port=443, path="/v4/ws/usdt")...
+I1106 15:57:45.751033 21616 L0 retry_connection_manager.cpp:193] Connected (host="api.gateio.ws", port=443)
+I1106 15:57:45.751053 21616 L0 order_entry.cpp:188] stream_status={stream_id=2, account="A1", supports=TRADE|POSITION|FUNDS, transport=TCP, protocol=HTTP, encoding=JSON, priority=PRIMARY, connection_status=DOWNLOADING, interface="", authority="api.gateio.ws", path="/api/v4", proxy=""}
+I1106 15:57:45.751072 21616 L0 download.hpp:67] Begin
+I1106 15:57:45.751078 21616 L0 download.hpp:172] Request ACCOUNTS...
+I1106 15:57:45.751956 21616 L0 retry_connection_manager.cpp:193] Connected (host="api.gateio.ws", port=443)
+I1106 15:57:45.751971 21616 L0 rest.cpp:146] stream_status={stream_id=1, account="", supports=REFERENCE_DATA|MARKET_STATUS, transport=TCP, protocol=HTTP, encoding=JSON, priority=PRIMARY, connection_status=DOWNLOADING, interface="", authority="api.gateio.ws", path="/api/v4", proxy=""}
+I1106 15:57:45.751976 21616 L0 download.hpp:67] Begin
+I1106 15:57:45.751978 21616 L0 download.hpp:172] Request CURRENCIES...
+I1106 15:57:45.755506 21616 L0 download.hpp:67] Begin
+I1106 15:57:45.755515 21616 L0 download.hpp:172] Request LOGIN...
+I1106 15:57:45.757502 21616 L0 download.hpp:149] Completed ACCOUNTS
+I1106 15:57:45.757529 21616 L0 download.hpp:172] Request POSITIONS...
+I1106 15:57:45.758921 21616 L0 download.hpp:149] Completed LOGIN
+I1106 15:57:45.758930 21616 L0 download.hpp:172] Request SUBSCRIBE...
+I1106 15:57:45.758958 21616 L0 download.hpp:188] Completed SUBSCRIBE
+I1106 15:57:45.758959 21616 L0 download.hpp:172] Request ORDERS...
+I1106 15:57:45.765232 21616 L0 download.hpp:149] Completed POSITIONS
+I1106 15:57:45.765242 21616 L0 download.hpp:172] Request TRADES...
+I1106 15:57:45.770796 21616 L0 download.hpp:149] Completed TRADES
+I1106 15:57:45.770817 21616 L0 order_entry.cpp:188] stream_status={stream_id=2, account="A1", supports=TRADE|POSITION|FUNDS, transport=TCP, protocol=HTTP, encoding=JSON, priority=PRIMARY, connection_status=READY, interface="", authority="api.gateio.ws", path="/api/v4", proxy=""}
+I1106 15:57:45.770828 21616 L0 download.hpp:163] Done!
+I1106 15:57:45.776024 21616 L0 download.hpp:149] Completed ORDERS
+I1106 15:57:45.776043 21616 L0 drop_copy.cpp:405] stream_status={stream_id=3, account="A1", supports=CREATE_ORDER|CANCEL_ORDER|ORDER_ACK|ORDER|TRADE|POSITION|FUNDS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=READY, interface="", authority="fx-ws.gateio.ws", path="/v4/ws/usdt", proxy=""}
+I1106 15:57:45.776052 21616 L0 download.hpp:163] Done!
+I1106 15:57:45.799171 21616 L0 download.hpp:149] Completed CURRENCIES
+I1106 15:57:45.799189 21616 L0 download.hpp:172] Request CONTRACTS...
+I1106 15:57:45.830921 21616 L0 rest.cpp:371] Symbols 21 / 470
+I1106 15:57:45.830936 21616 L0 download.hpp:149] Completed CONTRACTS
+I1106 15:57:45.830946 21616 L0 rest.cpp:146] stream_status={stream_id=1, account="", supports=REFERENCE_DATA|MARKET_STATUS, transport=TCP, protocol=HTTP, encoding=JSON, priority=PRIMARY, connection_status=READY, interface="", authority="api.gateio.ws", path="/api/v4", proxy=""}
+I1106 15:57:45.830956 21616 L0 download.hpp:163] Done!
+I1106 15:57:45.839019 21616 L0 retry_connection_manager.cpp:193] Connected (host="fx-ws.gateio.ws", port=443)
+I1106 15:57:45.839037 21616 L0 client.cpp:156] Upgrading (host="fx-ws.gateio.ws", port=443, path="/v4/ws/usdt")...
+I1106 15:57:45.844886 21616 L0 market_data.cpp:186] stream_status={stream_id=4, account="", supports=MARKET_STATUS|TOP_OF_BOOK|MARKET_BY_PRICE|TRADE_SUMMARY|STATISTICS, transport=TCP, protocol=WS, encoding=JSON, priority=PRIMARY, connection_status=READY, interface="", authority="fx-ws.gateio.ws", path="/v4/ws/usdt", proxy=""}
+I1106 15:57:45.890406 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="ENS_USDT" (retries=1)
+I1106 15:57:45.899919 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="BTC_USDT" (retries=1)
+I1106 15:57:45.912878 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="RAY_USDT" (retries=1)
+I1106 15:57:45.990394 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="WOO_USDT" (retries=1)
+I1106 15:57:46.002249 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="XRP_USDT" (retries=1)
+I1106 15:57:46.014242 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="ALGO_USDT" (retries=1)
+I1106 15:57:46.037872 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="AGLD_USDT" (retries=1)
+I1106 15:57:46.054796 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="RSR_USDT" (retries=1)
+I1106 15:57:46.230907 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="SNX_USDT" (retries=1)
+I1106 15:57:46.286310 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="ID_USDT" (retries=1)
+I1106 15:57:46.305261 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="SLP_USDT" (retries=1)
+I1106 15:57:46.397523 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="ENS_USDT", sequence=4638232620, retries=0, delay=507ms
+I1106 15:57:46.407899 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="BTC_USDT", sequence=69706912548, retries=0, delay=507ms
+I1106 15:57:46.418667 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="RAY_USDT", sequence=1234380713, retries=0, delay=505ms
+I1106 15:57:46.455685 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="ZRX_USDT" (retries=1)
+I1106 15:57:46.496640 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="WOO_USDT", sequence=1059723206, retries=0, delay=506ms
+I1106 15:57:46.508468 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="XRP_USDT", sequence=11184968505, retries=0, delay=506ms
+I1106 15:57:46.520128 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="ALGO_USDT", sequence=4134116291, retries=0, delay=505ms
+I1106 15:57:46.527148 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="SWEAT_USDT" (retries=1)
+I1106 15:57:46.544337 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="AGLD_USDT", sequence=1628979131, retries=0, delay=506ms
+I1106 15:57:46.559929 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="RSR_USDT", sequence=1578170194, retries=0, delay=505ms
+I1106 15:57:46.662910 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="CVC_USDT" (retries=1)
+I1106 15:57:46.737449 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="SNX_USDT", sequence=3602446801, retries=0, delay=506ms
+I1106 15:57:46.792257 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="ID_USDT", sequence=2548787347, retries=0, delay=505ms
+I1106 15:57:46.810543 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="SLP_USDT", sequence=1718997966, retries=0, delay=505ms
+I1106 15:57:46.843623 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="GLM_USDT" (retries=1)
+I1106 15:57:46.926180 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="RON_USDT" (retries=1)
+I1106 15:57:46.963073 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="ZRX_USDT", sequence=1429667526, retries=0, delay=507ms
+I1106 15:57:47.034145 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="SWEAT_USDT", sequence=182865369, retries=0, delay=506ms
+I1106 15:57:47.168752 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="CVC_USDT", sequence=2734234061, retries=0, delay=505ms
+I1106 15:57:47.201221 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="KSM_USDT" (retries=1)
+I1106 15:57:47.201262 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="CRO_USDT" (retries=1)
+I1106 15:57:47.349226 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="GLM_USDT", sequence=514812372, retries=0, delay=505ms
+I1106 15:57:47.434473 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="RON_USDT", sequence=299286803, retries=0, delay=508ms
+I1106 15:57:47.712474 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="KSM_USDT", sequence=3578960049, retries=0, delay=511ms
+I1106 15:57:47.726515 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="CRO_USDT", sequence=566991036, retries=0, delay=525ms
+I1106 15:57:47.831627 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="XTZ_USDT" (retries=1)
+I1106 15:57:48.339487 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="XTZ_USDT", sequence=3363255576, retries=0, delay=507ms
+I1106 15:57:48.476415 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="CVX_USDT" (retries=1)
+I1106 15:57:48.982372 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="CVX_USDT", sequence=774283531, retries=0, delay=505ms
+I1106 15:57:49.887409 21616 L0 market_data.cpp:477] DEBUG REQUEST symbol="ATH_USDT" (retries=1)
+I1106 15:57:50.394588 21616 L0 rest.cpp:437] DEBUG PUBLISH SNAPSHOT symbol="ATH_USDT", sequence=213115707, retries=0, delay=507ms
+I1106 15:58:38.927125 21597 L0 ipc_listener.cpp:64] Got connection fd=40
+I1106 15:58:38.927151 21597 L0 controller.cpp:363] Got connection
+I1106 15:58:38.927359 21597 L0 session.cpp:57] Adding user id=21, name="RAY"
+I1106 15:58:38.927840 21616 L0 state.cpp:80] subscribe={accounts={"A1"}, symbols_by_exchange={: {"BTC|USD"}, gate-futures: {"RAY_USDT"}, okx: {"RAY-USDT-SWAP"}}, order_cancel_policy=BY_ACCOUNT, order_management=UNDEFINED}, drop_copy=false
+I1106 15:58:46.543979 21597 L0 controller.cpp:527] +++ ACCESS TOKEN EXPIRES 1730915926s (IN 119 MINUTE(S)) +++
+W1106 15:59:23.075242 21616 L0 order_state.cpp:590] Received non-final order status WORKING after order has reached final status CANCELED
+W1106 16:01:30.182515 21597 L0 connection.cpp:149] Disconnected
+I1106 16:01:30.182534 21597 L0 session.cpp:64] Removing user id=21, name="RAY"
+W1106 16:01:30.182611 21616 L0 state.cpp:120] Disconnected: source="RAY", order_cancel_policy=BY_ACCOUNT
+W1106 16:01:30.182618 21616 L0 state.cpp:129] *** CANCEL ALL ACCOUNT ORDERS ***
+W1106 16:01:30.182622 21616 L0 state.cpp:145] - account="A1"
+W1106 16:01:30.182631 21616 L0 drop_copy.cpp:339] DEBUG message="{"id":116,"time":1730908890,"channel":"futures.order_cancel_cp","event":"api","payload":{"req_id":"UAIVAAAAAAAAAAAAAAAA","req_param":{"contract":"RAY_USDT"}}}"
+I1106 16:01:30.272283 21597 L0 controller.cpp:215] Detected zombie client session
+I1106 16:01:30.372520 21597 L0 controller.cpp:208] Removed 1 zombied client session(s) (remaining: 0)
+W1106 16:03:53.193696 21616 L0 drop_copy.cpp:881] *** EXTERNAL ORDER ***
+I1106 16:26:06.164414 21597 L0 controller.cpp:527] +++ ACCESS TOKEN EXPIRES 1730917566s (IN 119 MINUTE(S)) +++
+W1106 16:33:46.411946 21616 L0 drop_copy.cpp:881] *** EXTERNAL ORDER ***
+W1106 16:33:47.609355 21616 L0 drop_copy.cpp:654] *** EXTERNAL ORDER ***
+W1106 16:33:47.613362 21616 L0 drop_copy.cpp:881] *** EXTERNAL ORDER ***
+W1106 16:44:00.605607 21597 L0 controller.cpp:159] *** SIGNAL: TERMINATE ***
+I1106 16:44:00.605623 21597 L0 pollster.cpp:80] Dispatcher requested to stop...
+I1106 16:44:00.605630 21616 L0 gateway.cpp:72] Stopping...
+I1106 16:44:00.605670 21616 L0 pollster.cpp:96] Dispatcher thread has terminated
+I1106 16:44:00.606368 21597 L0 client.cpp:261] Stopping the authenticator
+I1106 16:44:00.606377 21597 L0 controller.cpp:131] Done!
+I1106 16:44:00.654100 21597 L0 service.cpp:94] ===== STOP =====

@@ -1,0 +1,59 @@
+I1106 15:57:45.668433 21600 logging: async
+I1106 15:57:45.668466 21600 L0 service.cpp:67] ===== START =====
+I1106 15:57:45.668469 21600 L0 service.cpp:68] package name  : roq-udp-publisher
+I1106 15:57:45.668469 21600 L0 service.cpp:69] build version : 1.0.2
+I1106 15:57:45.668470 21600 L0 service.cpp:70] build number  : 20241106
+I1106 15:57:45.668471 21600 L0 service.cpp:71] build type    : Release
+I1106 15:57:45.668472 21600 L0 service.cpp:72] git hash      : gab5b730
+I1106 15:57:45.668473 21600 L0 service.cpp:73] compile time  : Nov  6 2024 06:12:02
+I1106 15:57:45.668474 21600 L0 service.cpp:74] host          : x86_64-conda-linux-gnu
+I1106 15:57:45.668476 21600 L0 service.cpp:75] uname -v      : #16~22.04.1-Ubuntu SMP Mon Aug 19 19:38:17 UTC 2024
+I1106 15:57:45.668478 21600 L0 service.cpp:76] uname -s      : Linux
+I1106 15:57:45.668480 21600 L0 service.cpp:77] uname -r      : 6.8.0-1015-aws
+I1106 15:57:45.668485 21600 L0 service.cpp:78] cwd           : /home/ubuntu/strategy/tokyo
+I1106 15:57:45.668487 21600 L0 service.cpp:79] pid           : 21600
+I1106 15:57:45.668579 21600 L0 settings.cpp:13] settings={exchange="udp", server={package={name="roq-udp-publisher", build_number="20241106"}, app={name="udp-publisher", api=""}, config={file="config.toml", secrets_file=""}, database={uri="", username="", password=***, name="roq_cache", retain_stale_orders_for=604800000000000ns}, io={backend="libevent", recv_buffer_size=0, recv_buffer_count=0, send_buffer_size=0, send_buffer_count=0}, net={connection_timeout=5000000000ns, disconnect_on_idle_timeout=30000000000ns, tls_validate_certificate=false}, loop={cpu_affinity=-1, sleep=500ns, timer_freq=2500ns, scheduling_policy="", scheduling_priority=-1}, cache={dir="roq-cache", retain_config_users_for=604800000000000ns}, udp={snapshot_address=10.7.94.174, snapshot_port=1504, incremental_address=10.7.94.174, incremental_port=1505, snapshot_delay_freq=10000000ns, snapshot_repeat_freq=60000000000ns, incremental_heartbeat_freq=3000000000ns, encoding="flatbuffers", enable_mbp=false}, event_log={input_buffer_size=16777216, output_buffer_size=16777216, compression_level=4, dir="", iso_week=true, sync_freq=300000000000ns, utimes_on_sync=false, encoding="flatbuffers", symlink=true}, client={listen_address="/home/ubuntu/sockets/udp_pub_hongkong.sock"}, ipc={copy_out_buffer_size=8388608, spmc_queue_size=134217728, spsc_queue_size=1048576}, service={listen_address="", url_prefix="", web_dir=""}, auth={keys_file="/home/ubuntu/keys.json", license_manager_uri=[https://auth-1.roq-trading.com/, https://auth-2.roq-trading.com/], proxy={scheme="", userinfo="", host="", port=0, path="", query="", fragment=""}, is_uat=false, hide_name=false, refresh_freq=1800000000000ns, retry_freq=60000000000ns, lock_period=7200000000000ns}, journal={cache=false, multicast_port=0, multicast_address="", local_interface="", multicast_ttl=4, multicast_loop=false, listen_port=0, test_disable_local_cache=false}, experimental={mbp_checksum=false, enable_risk=false,enable_portfolio=false,enable_reduce_only=falseenable_rest_cache=false, enable_time_series=false}}}
+I1106 15:57:45.668609 21600 L0 reader.cpp:624] Parse config_file="config.toml", cache_dir="roq-cache"
+I1106 15:57:45.668658 21600 L0 directory.cpp:80] Ensure directory path="roq-cache/udp-publisher/config" exists
+I1106 15:57:45.670442 21600 L0 context_factory.cpp:19] Create libevent context (config={recv={buffer_size=4096, buffer_count=32}, send={buffer_size=1048576, buffer_count=32}})
+I1106 15:57:45.670587 21600 L0 base.cpp:29] Initializing openssl...
+I1106 15:57:45.674225 21600 L0 dispatcher.cpp:295] Creating event-log...
+I1106 15:57:45.674250 21600 L0 dispatcher.cpp:302] Creating internal queue...
+I1106 15:57:45.675034 21600 L0 dispatcher.cpp:307] Creating broadcast queue...
+I1106 15:57:45.675474 21600 L0 cache.cpp:39] order_id seed 2684146567547
+I1106 15:57:45.699155 21600 L0 directory.cpp:80] Ensure directory path="roq-cache/udp-publisher/oms" exists
+I1106 15:57:45.699193 21600 L0 directory.cpp:80] Ensure directory path="roq-cache/udp-publisher/order" exists
+I1106 15:57:45.700761 21600 L0 dispatcher.cpp:404] Config hash=""
+I1106 15:57:45.700778 21600 L0 context_factory.cpp:19] Create libevent context (config={recv={buffer_size=4096, buffer_count=32}, send={buffer_size=1048576, buffer_count=32}})
+I1106 15:57:45.701956 21600 L0 factory.cpp:33] The HTTP service will *not* be started
+I1106 15:57:45.702077 21600 L0 socket.cpp:277] Removing existing path="/home/ubuntu/sockets/udp_pub_hongkong.sock"...
+I1106 15:57:45.702123 21600 L0 socket.cpp:279] Successfully removed path="/home/ubuntu/sockets/udp_pub_hongkong.sock"
+I1106 15:57:45.708111 21600 L0 client.cpp:58] Reading keys from path="/home/ubuntu/keys.json"
+I1106 15:57:45.708175 21600 L0 client.cpp:194] Using license manager
+I1106 15:57:45.708196 21600 L0 directory.cpp:80] Ensure directory path="roq-cache/udp-publisher/auth" exists
+I1106 15:57:45.709868 21600 L0 client.cpp:548] Reading access token from "roq-cache/udp-publisher/auth/1730908512030"...
+I1106 15:57:45.710042 21600 L0 controller.cpp:527] +++ ACCESS TOKEN EXPIRES 1730915711s (IN 117 MINUTE(S)) +++
+I1106 15:57:45.710183 21600 L0 controller.cpp:121] Dispatching...
+W1106 15:57:45.710277 21600 L0 controller.cpp:126] *** REDUCED LOGGING ***
+I1106 15:57:45.710285 21600 L0 client.cpp:254] Starting the authenticator
+I1106 15:57:45.710340 21615 L0 pollster.cpp:87] Dispatcher thread is running
+I1106 15:57:45.710350 21615 L0 gateway.cpp:20] Starting...
+I1106 15:58:38.927225 21600 L0 ipc_listener.cpp:64] Got connection fd=23
+I1106 15:58:38.927243 21600 L0 controller.cpp:363] Got connection
+I1106 15:58:38.927378 21600 L0 session.cpp:57] Adding user id=6, name="RAY"
+I1106 15:58:38.927890 21615 L0 state.cpp:80] subscribe={accounts={"A1"}, symbols_by_exchange={: {"BTC|USD"}, gate-futures: {"RAY_USDT"}, okx: {"RAY-USDT-SWAP"}}, order_cancel_policy=BY_ACCOUNT, order_management=UNDEFINED}, drop_copy=false
+I1106 15:58:46.562132 21600 L0 controller.cpp:527] +++ ACCESS TOKEN EXPIRES 1730915926s (IN 119 MINUTE(S)) +++
+W1106 16:01:30.181636 21600 L0 connection.cpp:149] Disconnected
+I1106 16:01:30.181651 21600 L0 session.cpp:64] Removing user id=6, name="RAY"
+W1106 16:01:30.182583 21615 L0 state.cpp:120] Disconnected: source="RAY", order_cancel_policy=BY_ACCOUNT
+W1106 16:01:30.182589 21615 L0 state.cpp:129] *** CANCEL ALL ACCOUNT ORDERS ***
+I1106 16:01:30.197695 21600 L0 controller.cpp:215] Detected zombie client session
+I1106 16:01:30.300296 21600 L0 controller.cpp:208] Removed 1 zombied client session(s) (remaining: 0)
+I1106 16:28:16.479969 21600 L0 controller.cpp:527] +++ ACCESS TOKEN EXPIRES 1730917696s (IN 119 MINUTE(S)) +++
+W1106 16:44:00.605637 21600 L0 controller.cpp:159] *** SIGNAL: TERMINATE ***
+I1106 16:44:00.605650 21600 L0 pollster.cpp:80] Dispatcher requested to stop...
+I1106 16:44:00.605806 21615 L0 gateway.cpp:24] Stopping...
+I1106 16:44:00.605822 21615 L0 pollster.cpp:96] Dispatcher thread has terminated
+I1106 16:44:00.605855 21600 L0 client.cpp:261] Stopping the authenticator
+I1106 16:44:00.605862 21600 L0 controller.cpp:131] Done!
+I1106 16:44:00.612144 21600 L0 service.cpp:94] ===== STOP =====
